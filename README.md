@@ -14,6 +14,9 @@ Fitting an NMF model is easy. Simply choose your algorithm and any relevant hype
 >> plot(results.time_hist, results.loss_hist)
 ```
 
+![alt text](https://github.com/degleris1/NonnegMatrixFactor/raw/master/docs/loss-demo.png "Loss Plot")
+
+
 ## Setup
 
 ## Supported Features
