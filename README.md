@@ -31,9 +31,9 @@ The following NMF models and algorithms are available
 
 - Loss functions
   - KL-divergence loss
-  - $\beta$-divergence loss
+  - beta-divergence loss
 - Regularizers
-  - $\ell_1, \ell_2$
+  - L1, L2
   - Volume
 - Separability
   - Convex algorithms
