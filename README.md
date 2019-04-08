@@ -8,9 +8,18 @@ Fitting an NMF model is easy. Simply choose your algorithm and any relevant hype
 
 ```julia
 >> using NonnegMatrixFactor
->> results = fit_nmf(data, K=3, max_itr=100)
+>> results = fit_nmf(data, alg=:mult, K=3, max_itr=100)
+>>
+>> using Plots
+>> plot(results.time_hist, results.loss_hist)
 ```
 
 ## Setup
 
 ## Supported Features
+
+The following NMF models and algorithms are available
+
+- Frobenius norm loss (square error)
+  - Multiplicative Updates (`:mult`)
+  - Hierachical Alternating Least Squares (`:hals`)
