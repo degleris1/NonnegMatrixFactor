@@ -9,10 +9,12 @@ export fit_nmf
 using LinearAlgebra
 include("./core.jl")  # Core
 include("./algs/mult.jl")  # Mult
+include("./algs/hals.jl")  # HALS
 
 
 ALGORITHMS = Dict(
     :mult => Mult,
+    :hals => HALS,
 )
 
 
