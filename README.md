@@ -24,5 +24,22 @@ Fitting an NMF model is easy. Simply choose your algorithm and any relevant hype
 The following NMF models and algorithms are available
 
 - Frobenius norm loss (square error)
-  - Multiplicative Updates (`:mult`)
-  - Hierachical Alternating Least Squares (`:hals`)
+  - Multiplicative Updates (`alg=:mult`)
+  - Hierachical Alternating Least Squares (`alg:hals`)
+  
+## Potential
+
+- Loss functions
+  - KL-divergence loss
+  - beta-divergence loss
+- Regularizers
+  - L1, L2
+  - Volume
+- Separability
+  - Convex algorithms
+  - SPA algorithm
+- Algorithms
+  - Accelerated update rules
+  - ANLS
+  - APLS
+  
