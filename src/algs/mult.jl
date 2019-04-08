@@ -14,10 +14,7 @@ function update!(data, W, H, meta; kwargs...)
     W .*= _mult_rule(data, W, H)
     H .*= _mult_rule(data', H', W')'
     
-    # Cache resids
-    meta.resids = data - W * H
-
-    return norm(meta.resids) / meta.data_norm, meta
+    return norm(data - W * H) / meta.data_norm, meta
 end
 
 
@@ -27,10 +24,8 @@ Private
 
 
 mutable struct Meta
-    resids
     data_norm
     function Meta(data, W, H)
-        resids = data - W * H
         data_norm = norm(data)
         return new(resids, data_norm)
     end

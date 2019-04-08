@@ -10,11 +10,13 @@ using LinearAlgebra
 include("./core.jl")  # Core
 include("./algs/mult.jl")  # Mult
 include("./algs/hals.jl")  # HALS
+include("./algs/projals.jl")  # ProjALS
 
 
 ALGORITHMS = Dict(
     :mult => Mult,
     :hals => HALS,
+    :projals => ProjALS
 )
 
 
