@@ -11,12 +11,14 @@ include("./core.jl")  # Core
 include("./algs/mult.jl")  # Mult
 include("./algs/hals.jl")  # HALS
 include("./algs/projals.jl")  # ProjALS
+include("./algs/klmult.jl")  #KLMult
 
 
 ALGORITHMS = Dict(
     :mult => Mult,
     :hals => HALS,
-    :projals => ProjALS
+    :projals => ProjALS,
+    :kl_mult => KLMult
 )
 
 

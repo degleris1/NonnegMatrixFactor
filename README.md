@@ -28,8 +28,8 @@ Fitting an NMF model is easy. Simply choose your algorithm and any relevant hype
 First, download and install the latest version of [Julia](https://julialang.org/downloads/). Then install the `NonnegMatrixFactor` package:
 
 ```julia
-using Pkg
-Pkg.add("NonnegMatrixFactor")
+>> using Pkg
+>> Pkg.add("NonnegMatrixFactor")
 ```
 
 ## Supported Features
@@ -37,6 +37,8 @@ Pkg.add("NonnegMatrixFactor")
 The following NMF models and algorithms are available
 
 - Frobenius norm loss (square error)
-  - Multiplicative Updates (`alg=:mult`)
-  - Hierachical Alternating Least Squares (`alg=:hals`)
-  - Projected Alternaing Least Squares (`alg=:projals`)
+  - Multiplicative updates (`alg=:mult`)
+  - Hierachical alternating least squares (`alg=:hals`)
+  - Projected alternaing least squares (`alg=:projals`)
+- KL-divergence loss
+  - Multiplicative updates (`alg=:kl_mult`)
